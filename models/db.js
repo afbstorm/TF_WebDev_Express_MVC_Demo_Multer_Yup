@@ -13,7 +13,7 @@ const sqlConfig = {
 
 
 const getDbConnection = async () => {
-    const db = await mssql.connect(sqlConfig)
+    return await mssql.connect(sqlConfig)
 }
 
 const testDbConnection = async () => {
